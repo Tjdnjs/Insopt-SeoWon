@@ -2,8 +2,8 @@
 
 ### SERVER PR
 
-- [기본 과제](#기본과제1st-week-taskbasic)
-- [도전 과제](#도전과제1st-week-taskadvanced)
+- [기본 과제](#기본과제)
+- [도전 과제](#도전과제)
 - [생각 과제]()
 
 <br />
