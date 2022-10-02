@@ -4,7 +4,7 @@
 
 - [기본 과제](#기본과제)
 - [도전 과제](#도전과제)
-- [생각 과제]()
+- [생각 과제](https://tjdnjs.github.io/sopt/sopt2/#%EB%8F%84%EC%A0%84-%EA%B3%BC%EC%A0%9C)
 
 ---
 
@@ -55,7 +55,7 @@
 세미나 열심히 듣고 열심히 따라적기
 
 - 도전과제<br>
-
+[블로그](https://tjdnjs.github.io/sopt/sopt2/#%EB%8F%84%EC%A0%84-%EA%B3%BC%EC%A0%9C)에 상세히 작성함
 
 <br />
 
