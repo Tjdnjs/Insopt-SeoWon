@@ -6,17 +6,7 @@
 
 */
 
-interface Member{
-    name: string;
-    group: string;
-}
-
-interface Dinner{
-    member: Member[];
-    menu: string[];
-    shuffle: (data: any[]) => any[];
-    organize: (data: Member[]) => void;
-}
+import { Dinner } from './interface/dinner'
 
 const dinner: Dinner = {
     member : [ 
