@@ -1,13 +1,13 @@
 import express, { application, NextFunction, Request, Response } from 'express';
-
 const app = express();
 const PORT = 3000;
 
 app.use(express.json());
+app.use(express.static(__dirname + '/templates'));
 app.use("/api", require("./api"));
 
 app.get("/", (req: Request, res: Response, next: NextFunction) => {
-    res.send('<h1>IN SOPT - SERVER</h1><h2>Seminar2</h2><button type="button"><a href="/api/blog">blog</a></button><button type="button"><a href="/api/comment">comment</a></button><button type="button"><a href="/api/members">members</a></button><button type="button"><a href="/api/movie">movie</a></button><button type="button"><a href="/api/user">user</a></button>');
+    res.render(__dirname + '/index.html');
 });
 
 app.listen(PORT, () => {
