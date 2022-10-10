@@ -15,9 +15,16 @@
 
 <img width="884" alt="image" src="https://user-images.githubusercontent.com/91242806/194763039-1220dadf-fe88-4a60-862f-1bc393f5458e.png">
 
-### /api/blog
+### GET /api/blog
 
 <img width="884" alt="image" src="https://user-images.githubusercontent.com/91242806/194762988-83bd126a-7ded-4efe-927e-16185bc2118d.png">
+
+### POST /api/blog
+
+post 생성 후 /read 페이지로 redirect
+
+<img width="770" alt="image" src="https://user-images.githubusercontent.com/91242806/194853456-bc94111c-8e7c-472d-b5cd-5012be1932fe.png">
+
 
 ### /api/comment
 
