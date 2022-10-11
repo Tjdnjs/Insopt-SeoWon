@@ -19,11 +19,10 @@ const page = template + `
 </html>` 
 
 router.get("/", (req: Request, res: Response) => {
-    // console.log(__dirname + 'blog.html')
     return res.send(page);
 });
 
-// create post
+// create comment
 router.post('/create', (req: Request, res: Response) => {
     const PostId = parseInt(req.body.PostId);
     const comment = req.body.comment;
@@ -34,6 +33,8 @@ router.post('/create', (req: Request, res: Response) => {
         post.push(blog_post[i].post_id);
     }
 
+    // 댓글을 작성하려는 post의 존재여부 검사
+    // 없으면 return success: false
     if (post.find(x => x==PostId) === undefined) {
         return res.json({
             success: false,
