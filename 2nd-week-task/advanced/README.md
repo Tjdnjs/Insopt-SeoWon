@@ -30,9 +30,10 @@
 
 ### /api/blog/create
 
-post 생성 후 /read 페이지로 redirect
 
 <img width="770" alt="image" src="https://user-images.githubusercontent.com/91242806/194853456-bc94111c-8e7c-472d-b5cd-5012be1932fe.png">
+
+
 
 ## Comment
 
@@ -42,7 +43,9 @@ post 생성 후 /read 페이지로 redirect
 
 ### /api/comment/create
 
-<img width="923" alt="image" src="https://user-images.githubusercontent.com/91242806/195074142-a1757365-d7aa-4131-9bc8-2c39f2611520.png">
+- 존재하는 게시글에 댓글을 작성한 경우 : post 생성 후 /read 페이지로 redirect<br><br><img width="923" alt="image" src="https://user-images.githubusercontent.com/91242806/195074142-a1757365-d7aa-4131-9bc8-2c39f2611520.png">
+
+- 존재하지 않는 게시물에 댓글 작성을 시도한 경우 <br><br><img width="923" alt="image" src="https://user-images.githubusercontent.com/91242806/195078861-6d48ba55-5b09-4bc6-bdf7-baeed1690fa5.png">
 
 ## Movie
 
