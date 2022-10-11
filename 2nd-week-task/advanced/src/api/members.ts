@@ -9,10 +9,10 @@ const page = template + `
     <h1>IN SOPT - SERVER / Seminar2</h1>
     <h2>${__filename.replace(__dirname+'/', '')}</h2>
     <section>
-        <button type="button"><a href="./members/create">create</a></button>
+        <button type="button"><a href="#">create</a></button>
         <button type="button"><a href="./members/read">read</a></button>
-        <button type="button"><a href="./members/update">update</a></button>
-        <button type="button"><a href="./members/delete">delete</a></button>
+        <button type="button"><a href="#">update</a></button>
+        <button type="button"><a href="#">delete</a></button>
     </section>
 </body>
 </html>` 
@@ -29,6 +29,7 @@ router.get("/read", (req: Request, res: Response) => {
     
     let member : member = {};
     
+    // array 형식 출력 X -> 각 객체를 member1 : ~ member2 : ~ 로 출력하기
     for(let i=0; i<members.length; i++) {
         member['member'+(i+1)] = JSON.parse(JSON.stringify(members[i]));
     }

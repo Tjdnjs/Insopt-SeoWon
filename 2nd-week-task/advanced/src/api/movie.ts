@@ -8,10 +8,10 @@ const page = template + `
     <h1>IN SOPT - SERVER / Seminar2</h1>
     <h2>${__filename.replace(__dirname+'/', '')}</h2>
     <section>
-        <button type="button"><a href="./movie/create">create</a></button>
+        <button type="button"><a href="#">create</a></button>
         <button type="button"><a href="./movie/read">read</a></button>
-        <button type="button"><a href="./movie/update">update</a></button>
-        <button type="button"><a href="./movie/delete">delete</a></button>
+        <button type="button"><a href="#">update</a></button>
+        <button type="button"><a href="#">delete</a></button>
     </section>
 </body>
 </html>` 
