@@ -13,16 +13,24 @@
 ## 도전과제
 
 ### /
+<img width="846" alt="image" src="https://user-images.githubusercontent.com/91242806/195080033-b0dfad0c-2304-49d9-9f1c-3ee08c4a33e2.png">
 
-<img width="884" alt="image" src="https://user-images.githubusercontent.com/91242806/194763052-2464c0a8-f5fa-4429-9f29-d73172cf1f1b.png">
+이제 아래 페이지들에 동작도 안 하는 (read 말고는 처리가 귀찮아서 안 만듦) 비루한 html을 넣어보았는데 ,,, 정적 파일연결 / 동적 html 사용을 해보고 싶었달까요 ^_^ 가운데에 뜨는 파일 이름을 어떻게 할까 하다가 아래 코드로 처리 완료 ~사실 라우팅 경로도 동적으로 만들고 싶었는데 replace 또 쓰기 귀찮아서 타이핑 했습니다~
 
+```typescript
+__filename.replace(__dirname+'/', '')
+```
 ## User
+
+<img width="846" alt="image" src="https://user-images.githubusercontent.com/91242806/195080171-ce0ae9a3-89ba-4897-8155-dd2cff1becb0.png">
 
 ### /api/user
 
 <img width="884" alt="image" src="https://user-images.githubusercontent.com/91242806/194763039-1220dadf-fe88-4a60-862f-1bc393f5458e.png">
 
 ## Blog
+
+<img width="846" alt="image" src="https://user-images.githubusercontent.com/91242806/195080120-3ea5c500-ae7a-4c07-ba10-8137721ba79d.png">
 
 ### /api/blog/read
 
@@ -37,6 +45,9 @@
 
 ## Comment
 
+<img width="846" alt="image" src="https://user-images.githubusercontent.com/91242806/195080232-c48049d8-9511-485e-bd83-603bd55adc3d.png">
+
+
 ### /api/comment/read
 
 <img width="884" alt="image" src="https://user-images.githubusercontent.com/91242806/194763014-68e24cbe-0dde-4cc0-8c2b-09e344ab9414.png">
@@ -49,11 +60,16 @@
 
 ## Movie
 
+<img width="846" alt="image" src="https://user-images.githubusercontent.com/91242806/195080357-7a33a323-ae19-4e1a-a375-99a5fe4198e7.png">
+
+
 ### /api/movie
 
 <img width="884" alt="image" src="https://user-images.githubusercontent.com/91242806/194763028-29c75cb4-8790-4f34-af4a-5c954be87038.png">
 
 ## Member
+
+<img width="846" alt="image" src="https://user-images.githubusercontent.com/91242806/195080306-2ea3e7b7-442a-4606-bd52-5d5ac6bb7cb6.png">
 
 ### /api/members
 
