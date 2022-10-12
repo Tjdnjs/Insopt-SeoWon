@@ -51,14 +51,14 @@ router.post('/create', (req: Request, res: Response) => {
 
 router.get("/read", (req: Request, res: Response) => {
     type comment ={
-        [key : string]: string|number;
+        [key : string]: object;
     }
 
     let comment : comment = {};
 
     // array 형식 출력 X -> 각 객체를 comment1 : ~ comment2 : ~ 로 출력하기
     for(let i=0; i<comment_data.length; i++) {
-        comment['comment'+(i+1)] = JSON.parse(JSON.stringify(comment_data[i]));
+        comment['comment'+(i+1)] = comment_data[i];
     }
 
     return res.status(200).json({

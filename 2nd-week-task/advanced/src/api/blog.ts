@@ -34,14 +34,14 @@ router.post('/create', (req: Request, res: Response) => {
 
 router.get("/read", (req: Request, res: Response) => {
     type blog ={
-        [key : string]: string|number;
+        [key : string]: object;
     }
 
     let blog : blog = {};
     
     // array 형식 출력 X -> 각 객체를 post1 : ~ post2 : ~ 로 출력하기
     for(let i=0; i<blog_post.length; i++) {
-        blog['post'+(i+1)] = JSON.parse(JSON.stringify(blog_post[i]));
+        blog['post'+(i+1)] = blog_post[i];
     }
 
     return res.status(200).json({
