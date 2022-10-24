@@ -10,27 +10,21 @@ const get_content = async (req: Request, res: Response) => {
         return res.status(404).json({status:404, message:`${contentID} is not a valid content`});
     }
 
-    return res.status(200).json({status:200, message:`${content.title} 조회 성공` ,data:content});
-};
-
-const get_episode = async (req: Request, res: Response) => {
-    const contentId = req.params.contentID;
-    const episodeId = req.params.episodeID;
-    const episode = await getEpisode(contentId, episodeId);
-    const content = await getContent(contentId);
-
-    if(!content){
-        return res.status(404).json({status:404, message:`${contentId} is not a valid content`});
+    if (!req.query.episode){
+        return res.status(200).json({status:200, message:`${content.title} 조회 성공` ,data:content});
     }
+    else{
+        const episodeID = req.query.episode.toString();
+        const episode = await getEpisode(contentID, episodeID);
 
-    if(!episode){
-        return res.status(404).json({status:404, message:`${episodeId}화 is not a valid episode in ${content.title}`});
+        if(!episode){
+            return res.status(404).json({status:404, message:`${episodeID}화 is not a valid episode in ${content.title}`});
+        }
+
+        return res.status(200).json({status:200, message:`${episodeID} episode 조회 성공` ,data:episode});
     }
-
-    return res.status(200).json({status:200, message:`${episodeId} episode 조회 성공` ,data:episode});
 };
 
 export {
-    get_content,
-    get_episode,
+    get_content
 }
