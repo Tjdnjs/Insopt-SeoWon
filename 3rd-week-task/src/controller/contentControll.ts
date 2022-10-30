@@ -1,5 +1,4 @@
 import { Request, Response } from "express";
-import { get } from "http";
 import { getContent, getEpisode } from "../service/contentService";
 
 const get_content = async (req: Request, res: Response) => {
